@@ -8,7 +8,7 @@ console.log(result);
 
 /**
  * Devuelve los strings unicos dentro del array que se le pasa por parametro
- * @param {Object} array   Array con strings a comparar.
+ * @param {Object} input   Array con strings a comparar.
  */
 function devuelveUnicos(input) {
 
@@ -18,8 +18,7 @@ function devuelveUnicos(input) {
     repetidos = elementosRepetidos(input);
 
     for (i = 0; i < input.length; i++) {
-        // Si no se encuentran string repetidas en el array 'input' y no existen aun en el resultado, se añaden al resultado.
-        // if (!repetidos.includes(input[i]) || respuesta.includes(input[i])) {
+        // Si no se encuentran string repetidas en el array 'input' y no existen aun en el resultado, se añaden al resultado.        
             if (!repetidos.includes(input[i])) {
             respuesta.push(input[i])
         }
@@ -30,7 +29,7 @@ function devuelveUnicos(input) {
 
 /**
  * Devuelve un array con los que estan repetidos dentro del parametro introducido
- * @param {Object} array   Array con strings a sacar repetidos.
+ * @param {Object} data   Array con strings a sacar repetidos.
  */
 function elementosRepetidos(data) {
 
